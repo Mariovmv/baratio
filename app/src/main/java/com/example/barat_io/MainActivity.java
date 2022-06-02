@@ -2,6 +2,7 @@ package com.example.barat_io;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,7 +39,12 @@ salir.setOnClickListener(new View.OnClickListener() {
 iniciar.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-
+        if(user.getText().toString().equals("fabian") && pass.getText().toString().equals("fabian123")){
+            Intent intent = new Intent(MainActivity.this, menu.class);
+            startActivity(intent);
+        }else {
+            Toast.makeText(MainActivity.this, "Verifique sus credenciales", Toast.LENGTH_SHORT).show();
+        }
     }
 });
 
