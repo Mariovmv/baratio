@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Barat-io</string>
-
     <string-array name="rol">
         <item>Administrador</item>
         <item>Usuario</item>
@@ -13,4 +12,14 @@
         <item>Cantidad</item>
         <item>Usuario</item>
     </string-array>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inventario">Inventario</string>
+    <string name="buscar">Buscar</string>
+    <string name="nombre">Nombre</string>
+    <string name="precio">Precio</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="proveedor">Proveedor</string>
+    <string name="marca">Marca</string>
+    <string name="descripcion">Descripcion</string>
 </resources>

@@ -3,21 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/MVM-01/Documents/Baratio/app/src/main/res/drawable/delete.xml" value="0.2115" />
-        <entry key="..\:/Users/MVM-01/Documents/Baratio/app/src/main/res/drawable/edit.xml" value="0.2115" />
-        <entry key="..\:/Users/MVM-01/Documents/Baratio/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/MVM-01/Documents/Baratio/app/src/main/res/layout/activity_productos.xml" value="0.25" />
-        <entry key="..\:/Users/MVM-01/Documents/Baratio/app/src/main/res/layout/activity_registro.xml" value="0.22" />
-        <entry key="..\:/Users/MVM-01/Documents/Baratio/app/src/main/res/layout/activity_usuarios.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/MVM-01/Documents/barat-io/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/MVM-01/Documents/barat-io/app/src/main/res/layout/activity_menu.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/MVM-01/Documents/barat-io/app/src/main/res/layout/activity_productos.xml" value="0.33" />
-        <entry key="..\:/Users/MVM-01/Documents/barat-io/app/src/main/res/layout/activity_registro.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/MVM-01/Documents/barat-io/app/src/main/res/layout/activity_usuarios.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/feivi/AndroidStudioProjects/barat-io/app/src/main/res/layout/activity_inventario.xml" value="0.33" />
+        <entry key="..\:/Users/feivi/AndroidStudioProjects/barat-io/app/src/main/res/layout/activity_productos.xml" value="0.33" />
+        <entry key="..\:/Users/feivi/AndroidStudioProjects/barat-io/app/src/main/res/layout/activity_productos2.xml" value="0.33" />
+        <entry key="..\:/Users/feivi/AndroidStudioProjects/barat-io/app/src/main/res/layout/activity_registro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/feivi/AndroidStudioProjects/barat-io/app/src/main/res/layout/fragment_producto.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/feivi/AndroidStudioProjects/barat-io/app/src/main/res/layout/inventario_row.xml" value="0.33" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

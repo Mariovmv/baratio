@@ -4,15 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".productos">
+    tools:context=".productos2">
+
+    <TextView
+        android:id="@+id/txtTituloNombre"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:text="Nombre"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/txtTituloPrecio"
+        android:layout_width="47dp"
+        android:layout_height="20dp"
+        android:text="Precio"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="240dp"
+        android:layout_height="43dp"
+        android:text="Pechuga de Pollo"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:text="12.00"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="210dp" />
 
     <ImageButton
-        android:id="@+id/imageButton18"
+        android:id="@+id/btnCantidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_baseline_unfold_more_24"
         tools:layout_editor_absoluteX="303dp"
         tools:layout_editor_absoluteY="210dp" />
+
+    <ImageButton
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/delete"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <TextView
+        android:id="@+id/txtCantidad"
+        android:layout_width="70dp"
+        android:layout_height="43dp"
+        android:text="Cantidad  34"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/txtProveedor"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:text="Proveedor : las granjas"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="184dp"
+        android:layout_height="44dp"
+        android:text="Paquete de pechugas de pollo sin hueso"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="253dp" />
 
     <TextView
         android:id="@+id/textView22"
@@ -81,57 +147,7 @@
         tools:layout_editor_absoluteY="367dp" />
 
     <TextView
-        android:id="@+id/textView19"
-        android:layout_width="184dp"
-        android:layout_height="44dp"
-        android:text="Paquete de pechugas de pollo sin hueso"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="253dp" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="130dp"
-        android:layout_height="43dp"
-        android:text="Proveedor : las granjas"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="253dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="240dp"
-        android:layout_height="20dp"
-        android:text="Nombre"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="190dp" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="240dp"
-        android:layout_height="43dp"
-        android:text="Pechuga de Pollo"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="210dp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="47dp"
-        android:layout_height="43dp"
-        android:text="12.00"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="210dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/delete"
-        tools:layout_editor_absoluteX="351dp"
-        tools:layout_editor_absoluteY="210dp" />
-
-    <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lista de Productos"
@@ -151,23 +167,15 @@
         tools:layout_editor_absoluteY="640dp" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spMarca"
         android:layout_width="141dp"
         android:layout_height="30dp"
         android:entries="@array/marca"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="140dp" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="47dp"
-        android:layout_height="20dp"
-        android:text="Precio"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="190dp" />
-
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/txtBuscar"
         android:layout_width="297dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -177,23 +185,15 @@
         tools:layout_editor_absoluteY="93dp" />
 
     <ImageButton
-        android:id="@+id/imageButton13"
+        android:id="@+id/btnBuscar"
         android:layout_width="66dp"
         android:layout_height="59dp"
         app:srcCompat="@drawable/search"
         tools:layout_editor_absoluteX="326dp"
         tools:layout_editor_absoluteY="107dp" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="70dp"
-        android:layout_height="43dp"
-        android:text="Cantidad  34"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="253dp" />
-
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/txtPrecio"
         android:layout_width="141dp"
         android:layout_height="40dp"
         android:ems="10"
