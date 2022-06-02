@@ -23,8 +23,8 @@ public class menu extends AppCompatActivity {
         productos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(menu.this, productos.class);
-                startActivity(intent);
+                //Intent intent = new Intent(menu.this, menu.class);
+                //startActivity(intent);
             }
         });
 

@@ -1,14 +1,17 @@
 package com.example.barat_io;
 
+import android.text.Layout;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class InventarioListAdapter extends ListAdapter<Producto, InventarioListAdapter.InventarioListHolder> {
+import com.example.barat_io.databinding.InventarioRowBinding;
+
+public class InventarioListAdapter extends ListAdapter<Producto, InventarioListAdapter.InventarioViewHolder> {
 
     protected InventarioListAdapter() {
         super(Producto.itemCallback);
@@ -16,19 +19,26 @@ public class InventarioListAdapter extends ListAdapter<Producto, InventarioListA
 
     @NonNull
     @Override
-    public InventarioListHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+    public InventarioViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        InventarioRowBinding inventarioRowBinding = InventarioRowBinding.inflate(layoutInflater,
+                parent, false);
+        return new InventarioViewHolder(inventarioRowBinding);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull InventarioListHolder holder, int position) {
-
+    public void onBindViewHolder(@NonNull InventarioViewHolder holder, int position) {
+        Producto producto = getItem(position);
+        holder.inventarioRowBinding.setProducto(producto);
     }
 
-    class InventarioListHolder extends RecyclerView.ViewHolder{
+    class InventarioViewHolder extends RecyclerView.ViewHolder{
 
-        public InventarioListHolder(@NonNull View itemView) {
-            super(itemView);
+        InventarioRowBinding inventarioRowBinding;
+
+        public InventarioViewHolder(InventarioRowBinding binding) {
+            super(binding.getRoot());
+            inventarioRowBinding = binding;
         }
     }
 

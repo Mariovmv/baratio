@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     Button salir, iniciar;
     EditText user, pass;
@@ -17,20 +17,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         salir = findViewById(R.id.salir);
         iniciar = findViewById(R.id.iniciar);
         user = findViewById(R.id.user);
         pass = findViewById(R.id.pass);
 
-
-
-
 salir.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        Toast.makeText(MainActivity.this, "Se cerro la aplicacion", Toast.LENGTH_SHORT).show();
+        Toast.makeText(LoginActivity.this, "Se cerro la aplicacion", Toast.LENGTH_SHORT).show();
         finish();
     }
 });
@@ -40,10 +37,10 @@ iniciar.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
         if(user.getText().toString().equals("fabian") && pass.getText().toString().equals("fabian123")){
-            Intent intent = new Intent(MainActivity.this, menu.class);
+            Intent intent = new Intent(LoginActivity.this, InventarioActivity.class);
             startActivity(intent);
         }else {
-            Toast.makeText(MainActivity.this, "Verifique sus credenciales", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, "Verifique sus credenciales", Toast.LENGTH_SHORT).show();
         }
     }
 });
