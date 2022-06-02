@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Barat-io</string>
+
+    <string-array name="rol">
+        <item>Administrador</item>
+        <item>Usuario</item>
+    </string-array>
+    <string-array name="marca">
+        <item>Marca</item>
+        <item>Usuario</item>
+    </string-array>
+    <string-array name="cantidad">
+        <item>Cantidad</item>
+        <item>Usuario</item>
+    </string-array>
+</resources>
